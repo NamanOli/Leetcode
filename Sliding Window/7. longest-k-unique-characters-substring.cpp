@@ -1,5 +1,7 @@
 //https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1#
-
+/* Put i=0,j=0 and increment j++. Now store the characters i.e. s[j] in a map and map[s[j]]++. Now calculate map.size(), if it is less than k j++ else if it is equal to k
+store it in a variable mx which will store j-i+1 . if map.size() becomes greater than k then i++ and map[s[i]]--.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
