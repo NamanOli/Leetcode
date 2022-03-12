@@ -102,6 +102,16 @@ Iterative solution using stack: O(n) time and O(n) space;
 Recursive solution: O(n) time and O(n) space (function call stack);
 Morris traversal: O(n) time and O(1) space.
 
+The inOrder Traversal is : 4 2 8 5 1 6 3 9 7 10
+
+Time Complexity: O(N).
+
+Reason: We are traversing N nodes and every node is visited exactly once.
+
+Space Complexity: O(N)
+
+Reason: In the worst case (a tree with just left children), the space complexity will be O(N).
+
 ```
 
 ```
