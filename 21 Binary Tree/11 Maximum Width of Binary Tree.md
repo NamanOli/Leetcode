@@ -85,3 +85,11 @@ public:
     }
 };
 ```
+
+The maximum width of the Binary Tree is 8
+
+Time Complexity: O(N)
+
+Reason: We are doing a simple level order traversal. The inner loop simply traverses the nodes level-wise and doesn’t add to the complexity.
+
+Space Complexity: O(N)
