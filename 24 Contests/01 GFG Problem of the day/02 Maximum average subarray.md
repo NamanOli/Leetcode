@@ -28,3 +28,5 @@ public:
 
 Time Complexity - O(n)
 Space Complexity - O(1)
+
+https://practice.geeksforgeeks.org/problems/maximum-average-subarray5859/1#
