@@ -1,3 +1,7 @@
+https://youtu.be/UmJT3j26t1I
+
+https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+
 1. Traverse the array the first element will be the root . Keep on putting the smaller element to the left and greater element to the right.
 
 Time Complexity - O(N * N)
