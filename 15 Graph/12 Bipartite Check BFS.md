@@ -98,30 +98,50 @@ int main() {
 Grid Based - 
 
 ```
- bool isBipartite(vector<vector<int>>& graph) {
-    int n = graph.size();
-    vector<int> color(n); // 0: uncolored; 1: color A; -1: color B
-        
-    queue<int> q; // queue, resusable for BFS    
-	
-    for (int i = 0; i < n; i++) {
-      if (color[i]) continue; // skip already colored nodes
-      
-      // BFS with seed node i to color neighbors with opposite color
-      color[i] = 1; // color seed i to be A (doesn't matter A or B) 
-      for (q.push(i); !q.empty(); q.pop()) {
-        int cur = q.front();
-        for (int neighbor : graph[cur]) 
-		{
-          if (!color[neighbor]) // if uncolored, color with opposite color
-          { color[neighbor] = -color[cur]; q.push(neighbor); } 
-		  
-          else if (color[neighbor] == color[cur]) 
-            return false; // if already colored with same color, can't be bipartite!
-        }        
-      }
+class Solution {
+    public:
+    bool checkbipartite(int node,vector<vector<int>>& graph,int color[])
+    {
+        queue<int>q;
+        q.push(node);
+        color[node]=1;
+        while(!q.empty())
+        {
+            int node = q.front();
+            q.pop();
+            for(auto it:graph[node])
+            {
+                if(color[it]==-1)
+                {
+                    color[it]=1-color[node];
+                    q.push(it);
+                }
+                else if(color[it]==color[node])
+                {
+                    return false;
+                    
+                }
+            }
+        }
+        return true;
     }
-    
-    return true;
-  }
+public:
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n=graph.size();
+        int color[n];
+        memset(color,-1,sizeof color);
+        for(int i=0;i<n;i++)
+        {
+            if(color[i]==-1)
+            {
+                if(!checkbipartite(i,graph,color))
+            {
+                return false;
+            }
+            }
+            
+        }
+        return true;
+    }
+};
   ```
