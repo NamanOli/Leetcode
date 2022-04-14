@@ -1,5 +1,7 @@
 https://leetcode.com/problems/reverse-words-in-a-string/
 
+https://takeuforward.org/data-structure/reverse-words-in-a-string/
+
 ```
 
 class Solution {
