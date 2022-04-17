@@ -38,3 +38,8 @@ class Solution {
 - pop the front of priority queue
 - return answers
 ```
+
+```
+Time Complexity - O(N)
+Space Complexity - O(N)
+```
