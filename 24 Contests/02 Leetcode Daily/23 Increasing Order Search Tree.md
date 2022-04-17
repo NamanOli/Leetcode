@@ -1,5 +1,7 @@
 https://leetcode.com/problems/increasing-order-search-tree/
 
+https://leetcode.com/problems/increasing-order-search-tree/discuss/958108/C%2B%2B-Inorder-Traversal-O(N)-easy-to-understand
+
 ```
 /**
  * Definition for a binary tree node.
