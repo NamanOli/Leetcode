@@ -30,3 +30,11 @@ class Solution {
     }
 };
 ```
+```
+- Create a priority queue with pair
+- If t==0 then return null
+- Until t is positive and priority size is positive
+- Until b is not zero or t is not zero , ad a to answer
+- pop the front of priority queue
+- return answers
+```
